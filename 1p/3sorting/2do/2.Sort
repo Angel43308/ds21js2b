@@ -1,0 +1,13 @@
+function aleatorio()
+{
+  let n=Math.random()*20;
+  return Math.floor(1+n);
+}
+let d=[];
+for(x=0;x<5;x++)
+{
+	let na=aleatorio();
+	d[x]=na;
+} 
+console.log("Números aleatorios: "+d);
+console.log("Números aleatorios ordenados(sort) "+d.sort((a, b)=>a - b));

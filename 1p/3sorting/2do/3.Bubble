@@ -1,0 +1,25 @@
+function aleatorio()
+{
+	let letra;
+	return letra=String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64);
+}    
+let O={letras:[]},la;
+for(x=0;x<5;x++)
+{
+	la=aleatorio();
+	O.letras.push(la);
+}
+console.log("Nombres aleatorios "+O.letras);
+for (k = 1; k < O.letras.length; k++) 
+{
+	for (i = 0; i < O.letras.length - k; i++) 
+  	{
+  		if (O.letras[i] > O.letras[i + 1]) 
+    		{
+    			aux = O.letras[i];
+      			O.letras[i] = O.letras[i + 1];
+    			O.letras[i + 1] = aux;
+    		}	
+  	}
+}  
+console.log("Nombres aleatorios ordenados(bubble) "+O.letras);  

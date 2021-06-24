@@ -1,0 +1,11 @@
+function aleatorio()
+{
+  let letra;
+  return letra=String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64);
+} 
+const map = new Map()
+for(i=0;i<5;i++)	
+	map.set(i+1, aleatorio());
+
+for (const item of map) 
+  console.log(item);

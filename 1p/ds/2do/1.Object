@@ -1,0 +1,10 @@
+function aleatorio()
+{
+  let letra;
+  return letra=String.fromCharCode((Math.floor(1+(Math.random()*26)))+64);
+}    
+let n = [];
+const fn = (k) => n.push(k);
+for(i=0;i<5;i++)
+  fn(aleatorio()+aleatorio()+aleatorio()+aleatorio());
+console.log(n);

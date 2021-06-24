@@ -1,0 +1,10 @@
+function aleatorio()
+{
+  let letra;
+  return letra=String.fromCharCode((Math.floor(1+(Math.random()*26)))+64);
+}      
+const mySet = new Set()
+for(i=0;i<5;i++)
+	mySet.add(aleatorio()+aleatorio()+aleatorio()+aleatorio());
+for (const item of mySet) 
+  console.log(item);

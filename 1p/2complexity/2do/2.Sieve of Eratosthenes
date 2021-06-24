@@ -1,0 +1,15 @@
+let  n= parseInt(prompt("teclea el numero"));         
+let primo=[];
+for(let i=2;i<=n;i++)
+    primo[i]=i;
+for(i=2;i<=n;i++)
+{  
+	for(j=2;i*j<=n;j++)
+  	   primo[i*j]="";
+}
+console.log("Números múltiplos entre "+n);  
+for(i=2;i<=n;i++)
+{
+	if(primo[i])
+  	console.log(primo[i]);
+}

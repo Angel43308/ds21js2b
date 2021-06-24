@@ -1,0 +1,14 @@
+function aleatorio()
+{
+	let letra;
+ 	return letra=String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64)+String.fromCharCode((Math.floor(1+(Math.random()*26)))+64);
+}   
+let d=[];
+for(i=0;i<5;i++)  
+	d[i]=aleatorio();
+let k=prompt("Ingresa nombre a buscar de "+d+":");
+let found = d.find(element => element == k );
+if(!found)
+	console.log("-1");  
+else
+	console.log("El número "+k+"<br>Se encuentra en la posición: "+d.indexOf(found));

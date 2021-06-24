@@ -1,0 +1,6 @@
+function randomName()
+{
+  let letra;
+  return letra=Math.floor(1+(Math.random()*26))+64+Math.floor(1+(Math.random()*26))+64+Math.floor(1+(Math.random()*26))+64;
+}     
+console.log("name "+randomName());  

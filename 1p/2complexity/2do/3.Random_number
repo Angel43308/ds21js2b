@@ -1,0 +1,6 @@
+function aleatorio()
+{
+  return Math.floor(1+(Math.random()*n));
+}
+let n=prompt("Ingresa el limite del rango 1 hasta : ");  
+console.log((aleatorio()));
